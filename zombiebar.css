@@ -1,0 +1,198 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 700px;
+  width: 100%;
+}
+
+.backwall {
+  float: left;
+  background: -webkit-linear-gradient(right, #527574, #ADF6F5);
+  background: -o-linear-gradient(left, #527574, #ADF6F5);
+  background: linear-gradient(to left, #527574, #ADF6F5);
+  height: 700px;
+  width: 25%;
+  clear: right;
+  border: 1px solid #orange;
+  -webkit-clip-path: polygon(100% 0, 100% 30%, 0 100%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 30%, 0 100%, 0% 0%);
+}
+
+.wine {
+  float: right;
+  background: -webkit-linear-gradient(left, #527574, #ADF6F5);
+  background: -o-linear-gradient(right, #527574, #ADF6F5);
+  background: linear-gradient(to right, #527574, #ADF6F5);
+  height: 700px;
+  height: 100%;
+  width: 25%;
+  clear: right;
+  border: 1px solid #0000ff;
+  -webkit-clip-path: polygon(0% 0%, 0 30%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0 30%, 100% 100%, 100% 0%);
+}
+
+.zombiewinebar {
+  height: 70%;
+}
+
+.stools {
+  float: left;
+  height: 64%;
+  min-width: 50%;
+  border-style: solid;
+  /*border-color: #0000ff;*/
+  /*-webkit-clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);*/
+  /*background: url("images/bar.png");
+  background-position: 70% 30%;
+  background-size: 300px;
+  background-repeat: no-repeat;*/
+}
+
+.sign {
+  height: 30%;
+  width: 50%;
+  margin: auto;
+  background-color: #446161;
+  border-style: solid;
+  border-color: #444544;
+}
+
+#welcomeSign {
+  position: absolute;
+  width: 30%;
+  height: 191px;
+  background-color: #d9edf7;
+  left: 40%;
+  top: 7px;
+  background: url(images/WineBarSign.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.seat {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  background: url("images/barstool2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.seat.selected {
+      background-color: #ef0606;
+}
+
+#stool-1, #stool-2, #stool-3, #stool-4, #stool-5 {
+  float: left;
+  border-style: solid;
+  width: 100%;
+  height: 20%;
+  /*border-color: red;*/
+}
+
+/*#seat1, #seat2, #seat3, #seat4, #seat5 {
+  position: absolute;
+  width: 10%;
+  height: 100px;
+  /*background-color: #ec4242;*/
+  /*right: 15%;
+  bottom: 113px;
+  background: url("images/barstool2.png");
+  background-size: contain;
+}*/
+
+#wine-white {
+position: absolute;
+width: 10%;
+height: 100px;
+/*background-color: #d9edf7;*/
+left: 15%;
+bottom: 113px;
+background: url("images/whitewine.png");
+background-size: contain;
+/*width: 50%;
+height: 100%;
+border: 1px solid red;
+float: right;
+background: url("images/winetap.png");
+background-position: 30% 50%;
+background-size: 150px;
+background-repeat: no-repeat;*/
+}
+
+#wine-red {
+position: absolute;
+width: 10%;
+height: 100px;
+/*background-color: #ec4242;*/
+right: 15%;
+bottom: 113px;
+background: url("images/redwine.png");
+background-size: contain;
+  /*width: 50%;
+  height: 100%;
+border: 1px solid red;
+float: right;
+background: url("images/winetap.png");
+background-position: 30% 20%;
+background-size: 120px;
+background-repeat: no-repeat;*/
+}
+
+.zombiewinebar{
+  background-image: url("images/tiles.png");
+  background-repeat: repeat;
+  background-size:200px 150px;
+}
+
+#bar{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+.bar_wrap {
+  position: relative;
+}
+
+#textbox {
+display: none;
+padding: 40px;
+position: absolute;
+height: 200px;
+width: 200px;
+top: 10px;
+right: 10px;
+background-color: white;
+border-radius: 50%
+}
+#textbox::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.overlay {
+display: none;
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(1,1,1,0.5);
+z-index: 1000;
+}
+/*INSERT IMAGE HERE*/
+.overlay::after {
+
+}
