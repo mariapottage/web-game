@@ -1,6 +1,7 @@
 var game = {
   seats: [$('#seat1'), $('#seat2'), $('#seat3') ,$('#seat4'), $('#seat5')],
-  names: ['zombie1', 'zombie2', 'zombie3', 'zombie4', 'zombie5'],
+  names: ["images/zombie1.png","images/zombie2.png","images/zombie3.png","images/zombie4.png","images/zombie5.png"],
+  // 'zombie1', 'zombie2', 'zombie3', 'zombie4', 'zombie5'],
   people:[],
   start: function() {
     console.log("Starting game.");
@@ -55,6 +56,7 @@ var Person = function(seat, name) {
   this.selectSeat();
   this.selectWine();
   this.attachListeners();
+  $(".selected.seat").css('background-image','url(' + name + ')');
 };
 
 Person.prototype.selectSeat = function () {
@@ -74,5 +76,9 @@ Person.prototype.attachListeners = function() {
     game.selected_person = that;
     $('#textbox').text(that.wine);
     $('#textbox').show();
+    $('#textbox').css({
+    top: that.seat.position().top-120,
+    left: that.seat.position().left-30
+    });
   });
 };
