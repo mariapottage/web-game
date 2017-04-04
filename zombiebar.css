@@ -7,6 +7,65 @@ body{
   width: 100%;
 }
 
+.welcomegame {
+  position: absolute;
+  display: block;
+  background-image: url("images/gameIntro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  z-index: 10;
+}
+
+.welcomeButton {
+  position: absolute;
+  height: 100px;
+  width: 40%;
+  z-index: 20;
+  left: 30%;
+  bottom: 5%;
+  color: white;
+  font-size: 30px;
+}
+
+button {
+  /*position: absolute;
+  height: 100px;
+  width: 40%%;
+  z-index: 20;*/
+  border-top: 1px solid #e3e3e3;
+    background: #595454;
+    color: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9e9e9e), to(#595454));
+    background: -webkit-linear-gradient(top, #9e9e9e, #595454);
+    background: -moz-linear-gradient(top, #9e9e9e, #595454);
+    background: -ms-linear-gradient(top, #9e9e9e, #595454);
+    background: -o-linear-gradient(top, #9e9e9e, #595454);
+    padding: 18px 36px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 20px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    }
+ button:hover {
+    border-top-color: #e0282b;
+    background: #e0282b;
+    color: #fffaff;
+    }
+ button:active {
+    border-top-color: #d4cccc;
+    background: #d4cccc;
+    color: white;
+    }
+
 .backwall {
   float: left;
   background: -webkit-linear-gradient(right, #527574, #ADF6F5);
@@ -68,9 +127,10 @@ body{
   background-color: #d9edf7;
   left: 40%;
   top: 7px;
-  background: url(images/WineBarSign.jpg);
+  background: url("images/WineBarSign.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 
@@ -90,6 +150,7 @@ body{
      background-size: cover;
      /*background-repeat: no-repeat;*/
       background-position-y: 5%;
+
 }
 
 #stool-1, #stool-2, #stool-3, #stool-4, #stool-5 {
