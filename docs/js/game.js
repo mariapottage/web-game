@@ -1,3 +1,8 @@
+$('button').on("click",function(){
+  $('.welcomegame').toggleClass();
+  $('.welcomeButton').hide();
+});
+
 var game = {
   seats: [$('#seat1'), $('#seat2'), $('#seat3') ,$('#seat4'), $('#seat5')],
   names: ["images/zombie1.png","images/zombie2.png","images/zombie3.png","images/zombie4.png","images/zombie5.png"],
